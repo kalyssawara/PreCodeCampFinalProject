@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1350px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Light/Dark Mode Toggle */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body.night {
+    background-color: #2b3538;
+    transition: 0.5s;
+}
+
+.toggle {
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    background-color: #fff;
+    border: 2px solid #2b3538;
+    width: 45px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.toggle.active {
+    background-color: #2b3538;
+    border: 2px solid #fff;
+}
+
+.toggle:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 12px;
+    height: 12px;
+    background-color: #2b3538;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.toggle.active:before {
+    left: 27px;
+    background-color: #fff;
+}
+
+/* Container */
+.container {
+    margin: auto;
+}
+
+/* Heading */
+.content-heading {
+    width: 675px;
+    height: 650px;
+    margin-top: 100px;
+}
+
+.content-heading-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 675px);
+    text-align: right;
+    background-color: #69bfd6;
+    width: 640px;
+    height: 520px;
+    margin: 40px;
+    
+}
+
+
+.content-heading-item h3 {
+    font-size: 25px;
+    font-family: Ubuntu;
+    color: #fff;
+    margin: 190px 88px 0 0;
+}
+
+.content-heading-item h1 {
+    font-size: 50px;
+    font-family: League Spartan;
+    color: #fff;
+    margin: 10px 88px 42px;
+}
+
+.content-heading-item h2 {
+    font-size: 30px;
+    font-family: Ubuntu;
+    color: #fff;
+    margin-right: 88px;
+}
+
+/* Education */
+.content-education {
+    width: 100%;
+    margin-top: 63px;
+}
+
+.content-education-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    margin: auto;
+}
+
+.content-education-item h1 {
+    font-size: 50px;
+    font-family: League Spartan;
+} 
+
+body.night .content-education-item h1 {
+    color: #fff;
+}
+
+body.night .content-education-item h2 {
+    color: #fff;
+}
+
+body.night .content-education-item p {
+    color: #fff;
+}
+
+.content-education-item:nth-child(1) {
+    grid-row: 1/6;
+    width: 50%;
+    border-right: 8px solid #69bfd6;
+}
+
+.content-education-item:nth-child(2) h2{
+    font-size: 30px;
+    font-family: League Spartan;
+}
+
+.content-education-item:nth-child(3) h2{
+    font-size: 20px;
+    font-family: Ubuntu;
+    margin-top: 45px;
+}
+
+.content-education-item:nth-child(4) p{
+    font-size: 14px;
+    font-family: Ubuntu;
+}
+
+.content-education-item:nth-child(5) h2{
+    font-size: 20px;
+    font-family: Ubuntu;
+    margin-top: 55px;
+}
+
+.content-education-item:nth-child(6) p{
+    font-size: 14px;
+    font-family: Ubuntu;
+}
+
+/* Hard Skill */
+.content-hardskill {
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+}
+
+.content-hardskill-grid {
+    display: grid;
+    grid-template-columns: 640px 285px 430px;
+    justify-content: center;
+}
+
+.content-hardskill-item h2 {
+    font-size: 50px;
+    font-family: League Spartan;
+    color: #fff;
+} 
+
+.content-hardskill-item img {
+    margin-left: 110px;
+}
+
+.content-hardskill-item h3 {
+    font-size: 15px;
+    font-family: Ubuntu;
+    font-weight: bold;
+    color: #69bfd6;
+    margin: 30px 0 0 50px;
+}
+
+.content-hardskill-item ul li {
+    font-size: 14px;
+    font-family: Ubuntu;
+    color: #2b3538;
+    margin-left: 50px;
+}
+
+body.night .content-hardskill-item ul li {
+    color: #fff;
+}
+
+.content-hardskill-item:nth-child(1) {
+    grid-row: 1/4;
+    background-color: #69bfd6;
+}
+
+/* Soft Skill */
+.content-softskill {
+    width: 100%;
+    height: auto;
+}
+
+.content-softskill-grid {
+    display: grid;
+    grid-template-columns: 640px 285px 430px;
+    justify-content: center;
+}
+
+.content-softskill-item h2 {
+    font-size: 50px;
+    font-family: League Spartan;
+    color: #2b3538;
+} 
+
+body.night .content-softskill-item h2 {
+    color: #fff;
+}
+
+.content-softskill-item img {
+    margin-left: 110px;
+}
+
+.content-softskill-item h3 {
+    font-size: 15px;
+    font-family: Ubuntu;
+    font-weight: bold;
+    color: #2b3538;
+    margin: 30px 0 0 50px;
+}
+
+.content-softskill-item p {
+    font-size: 14px;
+    font-family: Ubuntu;
+    margin-left: 50px;
+    color: #fff;
+}
+
+.content-softskill-item:nth-child(1) {
+    grid-row: 1/4;
+    background: none;
+}
+
+.content-softskill-item {
+    background-color: #69bfd6;
+}
+
+/* Contact */
+.content-contact {
+    text-align: center;
+    margin: 90px 0;
+}
+
+.content-contact h2 {
+    font-size: 35px;
+    font-family: League Spartan;
+    color: #2b3538;
+
+}
+
+body.night .content-contact h2 {
+    color: #fff;
+}
+
+.content-contact h3 {
+    font-size: 15px;
+    font-family: Ubuntu;
+    color: #69bfd6;
+    margin-top: 65px;
+}
+
+.content-contact p {
+    font-size: 14px;
+    font-family: Ubuntu;
+    color: #2b3538;
+    margin-top: 35px;
+}
+
+body.night .content-contact p {
+    color: #fff;
+}
