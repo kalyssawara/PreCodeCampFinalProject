@@ -257,9 +257,6 @@ body.night .content-hardskill-item ul li {
     font-size: 50px;
     font-family: League Spartan;
     color: #2b3538;
-    /*border-top: 8px solid #69bfd6;
-    padding: 1rem;*/
-    
 } 
 
 body.night .content-softskill-item h2 {
@@ -271,12 +268,13 @@ body.night .content-softskill-item h2 {
     width: 100px;
     height: 100px;
     margin-top: 2rem;
+    margin-bottom: 2rem;
     
 }
 
-.content-softskill-item:nth-child(6) {
+/*.content-softskill-item:nth-child(6) {
     margin-bottom: 2rem;
-}
+}*/
 
 .content-softskill-item h3 {
     font-size: 15px;
@@ -540,7 +538,7 @@ body.night .content-contact p {
     }
 
     .content-softskill-item img {
-        margin-left: 97px;
+        margin-left: 93px;
     }
 
     .content-softskill-item h3 {
@@ -553,5 +551,9 @@ body.night .content-contact p {
         font-size: 12px;
         text-align: center;
         margin: 5px;
+    }
+
+    .content-softskill-item:nth-child(6) {
+        margin-bottom: 0rem;
     }
 }
